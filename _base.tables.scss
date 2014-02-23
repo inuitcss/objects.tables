@@ -4,10 +4,11 @@
 
 /**
  * Simple `table` styles.
- *
- * Predefine the variables below in order to alter specific features.
  */
+
+// Predefine the variables below in order to alter specific features.
 $inuit-table-padding:       quarter($inuit-base-spacing-unit) !default;
+
 table {
     width: 100%;
 }
