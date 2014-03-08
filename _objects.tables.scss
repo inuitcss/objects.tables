@@ -1,0 +1,152 @@
+/*------------------------------------*\
+    #TABLES
+\*------------------------------------*/
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-table-padding--compact:  quarter($inuit-base-spacing-unit) !default;
+$inuit-table-padding--cosy:     halve($inuit-base-spacing-unit) !default;
+$inuit-table-padding--comfy:    $inuit-base-spacing-unit !default;
+
+$inuit-table-border-width:      1px !default;
+$inuit-table-border-style:      solid !default;
+$inuit-table-border-color:      #ccc !default;
+
+.#{$inuit-namespace}table,
+%#{$inuit-namespace}table {
+    width: 100%;
+}
+
+
+
+
+
+/**
+ * Force tables into having equal-width columns.
+ */
+.#{$inuit-namespace}table--fixed,
+%#{$inuit-namespace}table--fixed {
+    table-layout: fixed;
+}
+
+
+
+
+
+/**
+ * Compact tables.
+ */
+.#{$inuit-namespace}table--compact,
+%#{$inuit-namespace}table--compact {
+
+    th,
+    td {
+        padding: $inuit-table-padding--compact;
+    }
+
+}
+
+
+
+
+
+/**
+ * Cosy tables.
+ */
+.#{$inuit-namespace}table--cosy,
+%#{$inuit-namespace}table--cosy {
+
+    th,
+    td {
+        padding: $inuit-table-padding--cosy;
+    }
+
+}
+
+
+
+
+
+/**
+ * Comfy tables.
+ */
+.#{$inuit-namespace}table--comfy,
+%#{$inuit-namespace}table--comfy {
+
+    th,
+    td {
+        padding: $inuit-table-padding--comfy;
+    }
+
+}
+
+
+
+
+
+/**
+ * Add borders around a `table`.
+ */
+.#{$inuit-namespace}table--cells,
+%#{$inuit-namespace}table--cells {
+
+    th,
+    td {
+        border: $inuit-table-border-width $inuit-table-border-style $inuit-table-border-color;
+    }
+
+}
+
+
+
+
+
+/**
+ * Add borders only to `table`’s rows.
+ */
+.#{$inuit-namespace}table--rows,
+%#{$inuit-namespace}table--rows {
+
+    &,
+    th,
+    td {
+        border: 0 $inuit-table-border-style $inuit-table-border-color;
+    }
+
+}
+
+.#{$inuit-namespace}table--rows,
+%#{$inuit-namespace}table--rows {
+    border-top-width: $inuit-table-border-width;
+
+    th,
+    td {
+        border-bottom-width: $inuit-table-border-width;
+    }
+}
+
+
+
+
+
+/**
+ * Add borders only to `table`’s columns.
+ */
+.#{$inuit-namespace}table--columns,
+%#{$inuit-namespace}table--columns {
+
+    &,
+    th,
+    td {
+        border: 0 $inuit-table-border-style $inuit-table-border-color;
+    }
+}
+
+.#{$inuit-namespace}table--columns,
+%#{$inuit-namespace}table--columns {
+    border-left-width: $inuit-table-border-width;
+
+    th,
+    td {
+        border-right-width: $inuit-table-border-width;
+    }
+}

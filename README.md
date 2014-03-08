@@ -1,3 +1,3 @@
-# Tables
+# The tables objects
 
-The inuitcss `tables` base module styles `table`s in a very, very basic manner.
+inuitcss has some useful helpers for common table patterns.

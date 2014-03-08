@@ -1,12 +1,11 @@
 {
   "name": "inuit-tables",
-  "version": "0.1.2",
-  "homepage": "https://github.com/inuitcss/base.tables",
+  "version": "0.0.1",
   "authors": [
     "Harry Roberts <harry@csswizardry.com>"
   ],
-  "description": "Base table styles for the inuitcss framework",
-  "main": "_base.tables.scss",
+  "description": "Simple tables objects for the inuitcss framework.",
+  "main": "_objects.tables.scss",
   "keywords": [
     "inuitcss",
     "oocss",
@@ -14,7 +13,9 @@
   ],
   "license": "Apache",
   "dependencies": {
-    "inuit-defaults": "~0.1.0",
-    "inuit-functions": "~0.1.0"
-  }
+    "inuit-defaults": "~0.1.2",
+    "inuit-functions": "~0.2.0",
+    "inuit-normalize": "~0.1.0"
+  },
+  "homepage": "https://github.com/inuitcss/objects.tables"
 }
