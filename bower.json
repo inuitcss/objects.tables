@@ -1,6 +1,6 @@
 {
   "name": "inuit-tables",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "authors": [
     "Harry Roberts <harry@csswizardry.com>"
   ],
@@ -13,7 +13,7 @@
   ],
   "license": "Apache",
   "dependencies": {
-    "inuit-defaults": "~0.1.4",
+    "inuit-defaults": "~0.2.0",
     "inuit-functions": "~0.2.0",
     "inuit-normalize": "~3.0.1"
   },
